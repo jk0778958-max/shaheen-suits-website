@@ -1,0 +1,118 @@
+/* Body Styling */
+body{
+    margin:0;
+    font-family:Arial, sans-serif;
+    background-image:url("../images/picture1.jpg.jpeg");
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+}
+
+/* Navigation Bar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:rgba(0,0,0,0.85);
+    padding:15px 30px;
+    position:fixed;
+    top:0;
+    width:100%;
+    box-sizing:border-box;
+    z-index:1000;
+}
+
+.logo{
+    color:gold;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    padding:8px 15px;
+    transition:0.3s;
+}
+
+.nav-links a:hover{
+    background:gold;
+    color:black;
+    border-radius:5px;
+}
+
+/* Header */
+header{
+    text-align:center;
+    color:white;
+    padding:140px 20px 50px;
+    background:rgba(0,0,0,0.4);
+}
+
+header h1{
+    font-size:45px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:20px;
+}
+
+/* Main Container */
+.container{
+    width:85%;
+    margin:40px auto;
+    padding:30px;
+    background:rgba(255,255,255,0.92);
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+    text-align:center;
+}
+
+.container h2{
+    font-size:35px;
+    color:#222;
+    margin-bottom:20px;
+}
+
+.container p{
+    font-size:20px;
+    line-height:1.8;
+    color:#333;
+    margin-bottom:20px;
+    text-align:justify;
+}
+
+/* Video Section */
+.about-video{
+    margin-top:30px;
+}
+
+.about-video h3{
+    font-size:28px;
+    margin-bottom:20px;
+    color:#222;
+}
+
+video{
+    width:80%;
+    max-width:800px;
+    border-radius:12px;
+    box-shadow:0 5px 20px rgba(0,0,0,0.3);
+}
+
+/* Footer */
+footer{
+    background:rgba(0,0,0,0.85);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}

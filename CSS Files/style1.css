@@ -1,0 +1,186 @@
+/* Body Styling */
+body{
+    margin:0;
+    font-family: Arial, sans-serif;
+    background-image: url("../images/picture1.jpg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+.nav-links a.active{
+    background: gold;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 5px;
+}
+
+/* Navigation Bar */
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background: rgba(0,0,0,0.85);
+    padding:15px 30px;
+    position:fixed;
+    top:0;
+    width:100%;
+    box-sizing:border-box;   /* Important fix */
+    z-index:1000;
+}
+
+.logo{
+    color:gold;
+    font-size:28px;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    align-items:center;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+    transition:0.3s;
+}
+.nav-links a:hover{
+    background:gold;
+    color:black;
+    border-radius:5px;
+}
+
+/* Header */
+header{
+    text-align:center;
+    color:white;
+    padding:140px 20px 50px;
+    background: rgba(0,0,0,0.4);
+}
+
+header h1{
+    font-size:50px;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:22px;
+}
+
+/* Main Container */
+.container{
+    width:85%;
+    margin:40px auto;
+    padding:30px;
+    background: rgba(255,255,255,0.92);
+    border-radius:15px;
+    box-shadow:0 0 20px rgba(0,0,0,0.4);
+    text-align:center;
+}
+.collection-row{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+}
+
+.suit-box{
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    transition: 0.3s;
+}
+
+.suit-box:hover{
+    transform: translateY(-8px);
+}
+
+/* Moving Text */
+.announcement{
+    background:#111;
+    color:white;
+    padding:12px;
+    border-radius:8px;
+    margin-bottom:25px;
+    overflow:hidden;
+}
+
+.moving-text{
+    white-space: nowrap;
+    display:inline-block;
+    animation: move 12s linear infinite;
+}
+
+@keyframes move{
+    from{
+        transform: translateX(100%);
+    }
+    to{
+        transform: translateX(-100%);
+    }
+}
+
+/* Section Heading */
+h2{
+    font-size:35px;
+    margin-bottom:25px;
+    color:#222;
+}
+
+/* Table Styling */
+table{
+    width:100%;
+    border-collapse: collapse;
+    margin:auto;
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+th{
+    background:#222;
+    color:white;
+    padding:18px;
+    font-size:22px;
+}
+
+td{
+    border:1px solid #ddd;
+    padding:20px;
+    text-align:center;
+    font-size:18px;
+}
+
+/* Images */
+img{
+    width:220px;
+    height:280px;
+    object-fit:cover;
+    border-radius:10px;
+    transition:0.4s;
+}
+
+img:hover{
+    transform:scale(1.08);
+}
+
+/* Price Styling */
+strong{
+    color:darkgreen;
+    font-size:20px;
+}
+
+/* Footer */
+footer{
+    background: rgba(0,0,0,0.85);
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:30px;
+}
